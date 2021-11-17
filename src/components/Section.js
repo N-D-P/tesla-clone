@@ -9,18 +9,20 @@ function Section() {
                 <p> Order online for contactless delivery</p>
             </ItemText>
 
-            <BUttonGroup>
+            <Buttons>
+            <ButtonGroup>
                 <LeftButton>
                     Custom Order
                 </LeftButton>
                 <RightButton>
                     Existing Inventory
                 </RightButton>
-            </BUttonGroup>
+            </ButtonGroup>
             <DownArrow src="/images/down-arrow.svg">
 
             </DownArrow>
-
+            </Buttons>
+            
         </Wrap>
     )
 }
@@ -45,11 +47,16 @@ const ItemText = styled.div`
     text-align: center;
 `
 
-const BUttonGroup = styled.div`
+const ButtonGroup = styled.div`
     display:flex;
     margin-bottom:30px;
 
 `
+
+const Buttons = styled.div`
+`
+
+
 const LeftButton = styled.div`
     background-color: rgba(23,26,32,0.8);
     height : 40px;
@@ -63,7 +70,7 @@ const LeftButton = styled.div`
     text-transform: uppercase; /* transform case of text */
     font-size:12px;
     cursor:pointer; /* to make cursor change when we take it on button */
-
+    margin:10px;
 
 
 `
@@ -74,7 +81,7 @@ const RightButton = styled(LeftButton)` /*inherit all the properties(css) of lef
 const DownArrow = styled.img`
 margin-top : 20px;
 height : 40px;
-animation animateDown infinte 1.5s;
+animation: animateDown infinite 1.5s;
 `
 
 
