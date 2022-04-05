@@ -79,7 +79,7 @@ const RightButton = styled(LeftButton)` /*inherit all the properties(css) of lef
 `
 
 const DownArrow = styled.img`
-margin-top : 20px;
+overflow-x: hidden;
 height : 40px;
 animation: animateDown infinite 1.5s;
 `
