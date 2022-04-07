@@ -50,6 +50,9 @@ const ItemText = styled.div`
 const ButtonGroup = styled.div`
     display:flex;
     margin-bottom:30px;
+    @media (max-width: 768px) {  /*Using media queries are a popular technique for delivering a tailored style sheet (responsive web design) to desktops, laptops, tablets, and mobile phones. */
+        flex-direction: column; /* when width becomes 768 its makes flex-direction: column */
+    }
 
 `
 
@@ -76,6 +79,9 @@ const LeftButton = styled.div`
 `
 
 const RightButton = styled(LeftButton)` /*inherit all the properties(css) of leftbutton*/
+    background: white;
+    opacity: 0.65;
+    color:black;
 `
 
 const DownArrow = styled.img`
